@@ -1,2 +1,2 @@
-# sequencesuite
+# SequenceSuite
 SequenceSuite Releases
