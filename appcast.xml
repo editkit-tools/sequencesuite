@@ -25,7 +25,7 @@
             <sparkle:releaseNotesLink>https://editkit.tools/sequencesuite/release-notes/1.0.html</sparkle:releaseNotesLink>
             <pubDate>Tue, 02 Jun 2026 08:25:13 +0100</pubDate>
             <enclosure
-                url="https://editkit.tools/sequencesuite/releases/SequenceSuite-1.0.dmg"
+                url="https://github.com/editkit-tools/sequencesuite/releases/download/v1.0.0/SequenceSuite.dmg"
                 sparkle:version="1"
                 sparkle:shortVersionString="1.0"
                 sparkle:edSignature="Ctdh3HuEQ5I+LICttfJMXZ7kRPjzM1pYY1GCoMv7e2lCgtnOHfVlyYQJKKfWashyf1k7HlGQG6/0DFKZFudHCg=="
