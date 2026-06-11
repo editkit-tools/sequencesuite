@@ -6,27 +6,6 @@
         <description>SequenceSuite release history</description>
         <language>en</language>
 
-        <!-- ============================================================
-             HOW TO ADD A NEW RELEASE
-             ============================================================
-             1. Build & archive SequenceSuite Pro Direct, export as notarised DMG
-             2. Run the Sparkle signing tool against the DMG:
-                    ./bin/sign_update SequenceSuite-1.0.dmg
-                This prints an edSignature value and a length. Copy both.
-             3. Duplicate the <item> block below, fill in:
-                    - <title>          human version string
-                    - sparkle:version  CURRENT_PROJECT_VERSION (integer build number)
-                    - sparkle:shortVersionString  MARKETING_VERSION (e.g. 1.0)
-                    - <pubDate>        release date (RFC 2822 format)
-                    - url              direct download link to the DMG
-                    - sparkle:edSignature  the signature from step 2
-                    - length           file size in bytes from step 2
-             4. Create a GitHub Release tagged vX.Y.Z in editkit-tools/sequencesuite,
-                attach the DMG renamed to SequenceSuite.dmg.
-                Commit the updated appcast.xml to the repo root — GitHub Pages
-                serves it at https://editkit-tools.github.io/sequencesuite/appcast.xml.
-             ============================================================ -->
-
         <item>
             <title>Version 1.1.0</title>
             <sparkle:releaseNotesLink>https://editkit.tools/sequencesuite/release-notes/1.1.0.html</sparkle:releaseNotesLink>
