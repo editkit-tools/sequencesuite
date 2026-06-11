@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SequenceSuite 1.2.0 — Release Notes</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #1a1917;
+    background: #f7f6f2;
+    padding: 28px 32px 48px;
+    max-width: 680px;
+  }
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #6b6762;
+    margin-bottom: 6px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #18171a;
+    margin-bottom: 6px;
+  }
+  .lead {
+    font-size: 14px;
+    color: #3a3835;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    padding-bottom: 20px;
+  }
+  h2 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #18171a;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  p { color: #3a3835; margin-bottom: 10px; }
+  ul {
+    padding-left: 18px;
+    margin-bottom: 4px;
+  }
+  li {
+    color: #3a3835;
+    margin-bottom: 5px;
+  }
+  strong { color: #18171a; font-weight: 600; }
+  .formats li { margin-bottom: 8px; }
+</style>
+</head>
+<body>
+
+<p class="eyebrow">Release notes</p>
+<h1>SequenceSuite 1.2.0</h1>
+<p class="lead">A big pass on speed and everyday handling — sequences open faster, and the report tables now feel like a proper macOS list you can drive entirely from the keyboard.</p>
+
+<h2>Faster on real timelines</h2>
+<ul>
+  <li><strong>Quicker opens</strong> — repeated reads of the same source are reused instead of re-scanned, so loading a sequence and switching between Sheet, Gather and Dupe is noticeably faster.</li>
+  <li><strong>No more stall on mode switch</strong> — moving between modes on a heavy timeline no longer hangs the window.</li>
+</ul>
+
+<h2>Drive the tables from the keyboard</h2>
+<ul>
+  <li><strong>Full keyboard navigation</strong> — arrow keys, plus Home, End, Page Up and Page Down to move through long clip lists without reaching for the mouse.</li>
+  <li><strong>Multi-row selection</strong> — Shift- and ⌘-click to pick ranges or scattered rows, and ⌘A to select everything.</li>
+  <li><strong>Selection totals</strong> — select a span of clips and Timecode shows the running total for just that selection.</li>
+  <li><strong>Copy what you picked</strong> — the Copy command now reflects how many rows you have selected and copies exactly those.</li>
+  <li><strong>⌘⌫ to remove</strong>, plus right-click Remove in the sidebar to drop a loaded source.</li>
+  <li><strong>Keyboard cheat sheet</strong> — a quick reference for every shortcut, and a Recents list to reopen what you were just working on.</li>
+</ul>
+
+<h2>Polish</h2>
+<ul>
+  <li>Cleaner selection highlighting and stronger contrast in Dark Mode.</li>
+  <li>Accessibility improvements throughout the report tables.</li>
+  <li>Various smaller fixes to row handling and scrolling.</li>
+</ul>
+
+</body>
+</html>

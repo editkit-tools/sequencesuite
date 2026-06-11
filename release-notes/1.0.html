@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SequenceSuite 1.0 — Release Notes</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #1a1917;
+    background: #f7f6f2;
+    padding: 28px 32px 48px;
+    max-width: 680px;
+  }
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #6b6762;
+    margin-bottom: 6px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #18171a;
+    margin-bottom: 6px;
+  }
+  .lead {
+    font-size: 14px;
+    color: #3a3835;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    padding-bottom: 20px;
+  }
+  h2 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #18171a;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  p { color: #3a3835; margin-bottom: 10px; }
+  ul {
+    padding-left: 18px;
+    margin-bottom: 4px;
+  }
+  li {
+    color: #3a3835;
+    margin-bottom: 5px;
+  }
+  strong { color: #18171a; font-weight: 600; }
+  .formats li { margin-bottom: 8px; }
+</style>
+</head>
+<body>
+
+<p class="eyebrow">Release notes</p>
+<h1>SequenceSuite 1.0</h1>
+<p class="lead">Sheet reports, media gather, and duplicate detection — three post-production workflows in one Mac app.</p>
+
+<p>
+  SequenceSuite 1.0 brings together the workflows from SequenceSheet Pro, KleptoClip, and DejaView
+  into a single app. Open a timeline file and switch between Sheet, Gather, and Dupe without
+  re-importing. All three modes share the same open files and the same session.
+</p>
+
+<h2>Sheet — sequence reports</h2>
+<p>
+  Sheet reads your timeline and builds a full clip listing with source reels, in/out timecodes,
+  track kinds, markers, transitions, filters, and graphics. Export to XLSX, CSV, PDF, or ALE in one click.
+</p>
+<ul>
+  <li>Separate report sections for reels, video, audio, markers, transitions, filters, and graphics</li>
+  <li>Batch export — select multiple sequences and write one file per sequence, or combine into a single workbook</li>
+  <li>Poster-frame thumbnails embedded in XLSX and PDF exports, decoded from an export playout or the original linked media</li>
+  <li>YouTube Chapters export from sequence markers, offset to programme start</li>
+  <li>ALE export for Avid bin import</li>
+  <li>Multi-track EDL sets grouped automatically as one cut</li>
+</ul>
+
+<h2>Gather — media consolidation</h2>
+<p>
+  Gather reads the file paths embedded in your timeline and builds a copy plan. Review what's ready,
+  what's missing, and where duplicates already exist on the destination before a single file moves.
+</p>
+<ul>
+  <li>Resumable copy with per-file checksum verification</li>
+  <li>Full source folder tree preserved at the destination — volume name and path kept intact for SMB, Nexis, USB, and local drives</li>
+  <li>R3D Siblings — scan a RED camera card against a Resolve conform destination and copy only the missing companions (.rtn, .wav, .rmd, etc.)</li>
+  <li>Gather completion notifications via macOS banners with Show in Finder</li>
+  <li>AAF ingest — reads Avid Media Composer sequence exports and builds a Gather plan from the embedded media locators</li>
+</ul>
+
+<h2>Dupe — duplicate detection</h2>
+<p>
+  Dupe compares timelines to find clips used more than once — across episodes, within a single cut,
+  or both. Results are grouped by source clip with exact, partial, and proximity match classifications.
+</p>
+<ul>
+  <li>Cross-episode comparison across any combination of open sequences</li>
+  <li>Target Episode mode — anchor the report to one episode's timeline perspective</li>
+  <li>Ignored sources — right-click a row to suppress known intentional reuses</li>
+  <li>Display Names — relabel any EDL or XML sequence without renaming the file</li>
+  <li>PDF View (single target) and PDF Master (all episodes, one document) exports</li>
+  <li>Matrix view showing overlap counts across every episode pair</li>
+</ul>
+
+<h2>Supported formats</h2>
+<ul class="formats">
+  <li><strong>Premiere Pro XMEML</strong> — single and multi-sequence XML, including 100+ sequence projects</li>
+  <li><strong>DaVinci Resolve XML</strong> — treated as a first-class source alongside Premiere</li>
+  <li><strong>CMX 3600 EDL</strong> — including Avid File_16, File_32, and File_129 multi-track exports</li>
+  <li><strong>FCPXML</strong> — native 1.12–1.14 packages and EditingTools-converted 1.6–1.10 files; first-pass support for real-world FCP projects</li>
+  <li><strong>OpenTimelineIO</strong> — read-only ingest of .otio exports from Resolve and other OTIO adapters</li>
+  <li><strong>Avid AAF</strong> — Gather media inventory</li>
+</ul>
+
+</body>
+</html>
