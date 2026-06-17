@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SequenceSuite 1.2.3 — Release Notes</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #1a1917;
+    background: #f7f6f2;
+    padding: 28px 32px 48px;
+    max-width: 680px;
+  }
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #6b6762;
+    margin-bottom: 6px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #18171a;
+    margin-bottom: 6px;
+  }
+  .lead {
+    font-size: 14px;
+    color: #3a3835;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    padding-bottom: 20px;
+  }
+  h2 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #18171a;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  p { color: #3a3835; margin-bottom: 10px; }
+  ul {
+    padding-left: 18px;
+    margin-bottom: 4px;
+  }
+  li {
+    color: #3a3835;
+    margin-bottom: 5px;
+  }
+  strong { color: #18171a; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<p class="eyebrow">Release notes</p>
+<h1>SequenceSuite 1.2.3</h1>
+<p class="lead">Sharper duplicate detection for graphics and titles, with new media-type filters across Dupe and Sheet.</p>
+
+<h2>Finding duplicates</h2>
+<ul>
+  <li><strong>Graphics and titles are told apart by name</strong> - distinct lower thirds, Astons and generators no longer collapse into a single false duplicate group. This works across Premiere, FCPXML, Resolve and Avid EDL exports.</li>
+  <li><strong>Avid titles are recognised</strong> - a title from an Avid EDL is now labelled as a graphic rather than treated as a missing reel.</li>
+</ul>
+
+<h2>Filtering by media type</h2>
+<ul>
+  <li><strong>Audio, Video, Stills and Generated buckets</strong> in both Dupe and Sheet, with a badge on every row so you can see at a glance what each clip is.</li>
+  <li>Generated graphics are hidden by default in Dupe so they stay out of your way; stills are shown. Toggle any bucket on or off as you work.</li>
+</ul>
+
+</body>
+</html>
