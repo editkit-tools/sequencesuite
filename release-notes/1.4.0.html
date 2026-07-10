@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SequenceSuite 1.4.0 — Release Notes</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #1a1917;
+    background: #f7f6f2;
+    padding: 28px 32px 48px;
+    max-width: 680px;
+  }
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #6b6762;
+    margin-bottom: 6px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #18171a;
+    margin-bottom: 6px;
+  }
+  .lead {
+    font-size: 14px;
+    color: #3a3835;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    padding-bottom: 20px;
+  }
+  h2 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #18171a;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  p { color: #3a3835; margin-bottom: 10px; }
+  ul {
+    padding-left: 18px;
+    margin-bottom: 4px;
+  }
+  li {
+    color: #3a3835;
+    margin-bottom: 5px;
+  }
+  strong { color: #18171a; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<p class="eyebrow">Release notes</p>
+<h1>SequenceSuite 1.4.0</h1>
+<p class="lead">Clip names you can trust, a consolidated Source Pull report for VFX and grading handoffs, and a camera-report style ordering preset - plus a more resilient way of getting damaged files open in the first place.</p>
+
+<h2>Honest clip names</h2>
+<ul>
+  <li><strong>Source File Name and Clip Name now show what's actually on disk</strong>, not the bin name from the NLE - so renders, VO recordings and Avid subclips that never had a real file no longer show a filename that doesn't exist.</li>
+  <li>The Clip Name column falls back to the NLE clip name only when there genuinely is no on-disk file to show, which is exactly the Avid-created-media case.</li>
+  <li>Where an EDL only carries the real filename in its reel column (a common export quirk), SequenceSuite now spots the match against the clip name and restores the proper filename, underscores and all.</li>
+</ul>
+
+<h2>Source Pull report</h2>
+<ul>
+  <li><strong>A new Source Pull report</strong> consolidates every use of a source clip across a sequence into one row per source range - the shape a VFX, grading or archive pull actually needs, instead of a full clip-by-clip listing.</li>
+  <li>Overlapping and adjacent uses of the same source are merged, with a configurable gap tolerance and configurable handles either side.</li>
+  <li>Available as an Excel and CSV report from the Sections list, with its own options in the Custom Export window.</li>
+</ul>
+
+<h2>C MODE ordering</h2>
+<ul>
+  <li><strong>A new "C MODE" row order</strong> in the Custom Export window sorts by reel, then source timecode, then sequence timecode - the camera-report ordering some post houses standardise on for delivery.</li>
+  <li>Ordering only - nothing about which clips appear or how they're grouped changes.</li>
+</ul>
+
+<h2>Getting damaged files open</h2>
+<ul>
+  <li><strong>A file with the wrong extension is now caught and rerouted</strong> instead of failing with a misleading error - drop in an EDL that got renamed to .xml and SequenceSuite still finds the right way to read it.</li>
+  <li><strong>Genuinely damaged files can now be repaired</strong> - truncated XML, bad encoding, stray invalid characters - with a clear "Attempt Repair" offer. Repairs never touch your original file, and a repaired load is always flagged with a note.</li>
+  <li>A standalone File ▸ Repair File… window lets you triage a damaged EDL, XML or OTIO file on its own.</li>
+</ul>
+
+<h2>Fixes and polish</h2>
+<ul>
+  <li>The XLSX front page (Welcome sheet / Sequences index) can now be switched off from the Custom Export window's Options, for workbooks that go straight to production.</li>
+  <li><strong>Batch exports no longer silently overwrite each other</strong> when two sequences in one project share a name - the second file gets a "(2)" suffix instead of replacing the first.</li>
+  <li>Search now works in Gather mode, filtering the media table just like it does in Sheet mode.</li>
+  <li>Dupe filters and expanded groups survive switching between modes instead of resetting.</li>
+  <li>Excel no longer offers to "repair" workbooks whose sheet names differed only by capitalisation, and CSVs with accented characters now open correctly in Excel.</li>
+  <li>Gathered copies keep their creation dates, permissions and Finder tags.</li>
+  <li>Locate matches media regardless of filename capitalisation, and cancelling thumbnail generation now stops it immediately.</li>
+  <li>A deep round of under-the-bonnet stability work makes long parses, gathers and exports more resilient while you keep working.</li>
+</ul>
+
+</body>
+</html>
