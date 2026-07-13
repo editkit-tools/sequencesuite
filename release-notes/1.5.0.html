@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SequenceSuite 1.5.0 — Release Notes</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #1a1917;
+    background: #f7f6f2;
+    padding: 28px 32px 48px;
+    max-width: 680px;
+  }
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #6b6762;
+    margin-bottom: 6px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #18171a;
+    margin-bottom: 6px;
+  }
+  .lead {
+    font-size: 14px;
+    color: #3a3835;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    padding-bottom: 20px;
+  }
+  h2 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #18171a;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  p { color: #3a3835; margin-bottom: 10px; }
+  ul {
+    padding-left: 18px;
+    margin-bottom: 4px;
+  }
+  li {
+    color: #3a3835;
+    margin-bottom: 5px;
+  }
+  strong { color: #18171a; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<p class="eyebrow">Release notes</p>
+<h1>SequenceSuite 1.5.0</h1>
+<p class="lead">A guided welcome for first launches, drag-to-reorder export columns, and proper support for reversed clips in EDLs - plus automatic update checks so you don't have to remember to look.</p>
+
+<h2>Welcome and guided tour</h2>
+<ul>
+  <li><strong>A new welcome panel greets the first launch</strong> - drop a sequence straight onto it or browse for one. Re-open it any time from Help &#9656; Welcome to SequenceSuite.</li>
+  <li>A short guided tour points out the mode switcher, sidebar, inspector and export controls after your first sequence opens.</li>
+  <li>The welcome page also shows where your trial or licence stands, with licence entry right there.</li>
+</ul>
+
+<h2>Automatic update checks</h2>
+<ul>
+  <li><strong>SequenceSuite now checks for updates once a day</strong> in the background, and quietly shortly after launch - so a new release reaches you without a trip to the menu bar.</li>
+  <li>Turn it off in Settings &#9656; General, where you'll also find Check Now and when the last check ran.</li>
+</ul>
+
+<h2>Reorder export columns</h2>
+<ul>
+  <li><strong>Columns in an Export Layout can now be dragged into any order</strong>, and Excel and CSV exports follow it.</li>
+  <li>PDF keeps its designed fixed layout - the Custom Export window says so when PDF is selected.</li>
+</ul>
+
+<h2>Reversed clips in EDLs</h2>
+<ul>
+  <li><strong>Clips playing in reverse now report their real source duration</strong> instead of zero, and no longer raise a false "source out before source in" notice.</li>
+  <li>Reverse motion is recognised even when the EDL flavour leaves out the speed line, as some Avid exports do.</li>
+  <li>Duplicate detection and Source Pull now treat reversed ranges correctly, so pulls cover the media actually used.</li>
+  <li>The Speed column shows a consistent percentage whether the sequence came in as an EDL or an XML.</li>
+</ul>
+
+<h2>Fixes and polish</h2>
+<ul>
+  <li>Custom Export now defaults to Full report unless you have actually narrowed the view - the standard hide-disabled-clips setting no longer counts as a filter.</li>
+  <li>An OTIO or FCPXML file hiding behind the wrong extension is now spotted and read correctly, extending 1.4.0's wrong-extension handling to every supported format.</li>
+  <li>Dropping files that live on a disconnected network drive no longer stalls the app.</li>
+</ul>
+
+</body>
+</html>
