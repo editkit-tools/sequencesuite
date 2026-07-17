@@ -65,14 +65,14 @@
 
 <h2>Honest clip names</h2>
 <ul>
-  <li><strong>Source File Name and Clip Name now show what's actually on disk</strong>, not the bin name from the NLE - so renders, VO recordings and Avid subclips that never had a real file no longer show a filename that doesn't exist.</li>
-  <li>The Clip Name column falls back to the NLE clip name only when there genuinely is no on-disk file to show, which is exactly the Avid-created-media case.</li>
-  <li>Where an EDL only carries the real filename in its reel column (a common export quirk), SequenceSuite now spots the match against the clip name and restores the proper filename, underscores and all.</li>
+  <li><strong>Source File Name and Clip Name show what's actually on disk</strong>, not the bin name from the NLE.</li>
+  <li>Media that never had a real file - renders, VO recordings, Avid subclips - is labelled by its clip name instead.</li>
+  <li>Where an EDL only carries the real filename in its reel column (a common export quirk), SequenceSuite spots the match against the clip name and restores the proper filename, underscores and all.</li>
 </ul>
 
 <h2>Source Pull report</h2>
 <ul>
-  <li><strong>A new Source Pull report</strong> consolidates every use of a source clip across a sequence into one row per source range - the shape a VFX, grading or archive pull actually needs, instead of a full clip-by-clip listing.</li>
+  <li><strong>A new Source Pull report</strong> consolidates every use of a source clip across a sequence into one row per source range - the shape a VFX, grading or archive pull actually needs.</li>
   <li>Overlapping and adjacent uses of the same source are merged, with a configurable gap tolerance and configurable handles either side.</li>
   <li>Available as an Excel and CSV report from the Sections list, with its own options in the Custom Export window.</li>
 </ul>
@@ -85,20 +85,20 @@
 
 <h2>Getting damaged files open</h2>
 <ul>
-  <li><strong>A file with the wrong extension is now caught and rerouted</strong> instead of failing with a misleading error - drop in an EDL that got renamed to .xml and SequenceSuite still finds the right way to read it.</li>
+  <li><strong>A file with the wrong extension is caught and rerouted</strong> - drop in an EDL that got renamed to .xml and SequenceSuite still finds the right way to read it.</li>
   <li><strong>Genuinely damaged files can now be repaired</strong> - truncated XML, bad encoding, stray invalid characters - with a clear "Attempt Repair" offer. Repairs never touch your original file, and a repaired load is always flagged with a note.</li>
   <li>A standalone File ▸ Repair File… window lets you triage a damaged EDL, XML or OTIO file on its own.</li>
 </ul>
 
 <h2>Fixes and polish</h2>
 <ul>
-  <li>The XLSX front page (Welcome sheet / Sequences index) can now be switched off from the Custom Export window's Options, for workbooks that go straight to production.</li>
-  <li><strong>Batch exports no longer silently overwrite each other</strong> when two sequences in one project share a name - the second file gets a "(2)" suffix instead of replacing the first.</li>
-  <li>Search now works in Gather mode, filtering the media table just like it does in Sheet mode.</li>
-  <li>Dupe filters and expanded groups survive switching between modes instead of resetting.</li>
-  <li>Excel no longer offers to "repair" workbooks whose sheet names differed only by capitalisation, and CSVs with accented characters now open correctly in Excel.</li>
+  <li>The XLSX front page (Welcome sheet / Sequences index) can be switched off from the Custom Export window's Options, for workbooks that go straight to production.</li>
+  <li><strong>Batch exports keep every file</strong> when two sequences in one project share a name - the second gets a "(2)" suffix.</li>
+  <li>Search works in Gather mode too, filtering the media table just like Sheet.</li>
+  <li>Dupe filters and expanded groups survive switching between modes.</li>
+  <li>Workbooks and CSVs open cleanly in Excel, accented characters and all.</li>
   <li>Gathered copies keep their creation dates, permissions and Finder tags.</li>
-  <li>Locate matches media regardless of filename capitalisation, and cancelling thumbnail generation now stops it immediately.</li>
+  <li>Locate matches media regardless of filename capitalisation, and cancelling thumbnail generation stops it immediately.</li>
   <li>A deep round of under-the-bonnet stability work makes long parses, gathers and exports more resilient while you keep working.</li>
 </ul>
 

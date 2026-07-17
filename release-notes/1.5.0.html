@@ -84,17 +84,16 @@
 
 <h2>Reversed clips in EDLs</h2>
 <ul>
-  <li><strong>Clips playing in reverse now report their real source duration</strong> instead of zero, and no longer raise a false "source out before source in" notice.</li>
-  <li>Reverse motion is recognised even when the EDL flavour leaves out the speed line, as some Avid exports do.</li>
-  <li>Duplicate detection and Source Pull now treat reversed ranges correctly, so pulls cover the media actually used.</li>
+  <li><strong>Clips playing in reverse report their real source duration</strong>, with reverse motion recognised even when the EDL flavour leaves out the speed line, as some Avid exports do.</li>
+  <li>Duplicate detection and Source Pull follow reversed ranges too, so pulls cover the media actually used.</li>
   <li>The Speed column shows a consistent percentage whether the sequence came in as an EDL or an XML.</li>
 </ul>
 
 <h2>Fixes and polish</h2>
 <ul>
-  <li>Custom Export now defaults to Full report unless you have actually narrowed the view - the standard hide-disabled-clips setting no longer counts as a filter.</li>
-  <li>An OTIO or FCPXML file hiding behind the wrong extension is now spotted and read correctly, extending 1.4.0's wrong-extension handling to every supported format.</li>
-  <li>Dropping files that live on a disconnected network drive no longer stalls the app.</li>
+  <li>Custom Export defaults to the Full report unless you have narrowed the view.</li>
+  <li>An OTIO or FCPXML file hiding behind the wrong extension is spotted and read correctly - wrong-extension handling now covers every supported format.</li>
+  <li>Plus small fixes and refinements throughout.</li>
 </ul>
 
 </body>
