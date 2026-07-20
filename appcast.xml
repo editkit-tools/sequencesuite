@@ -7,6 +7,20 @@
         <language>en</language>
 
         <item>
+            <title>Version 1.7.0</title>
+            <sparkle:releaseNotesLink>https://editkit-tools.github.io/sequencesuite/release-notes/1.7.0.html</sparkle:releaseNotesLink>
+            <pubDate>Mon, 20 Jul 2026 16:27:12 +0100</pubDate>
+            <enclosure
+                url="https://github.com/editkit-tools/sequencesuite/releases/download/v1.7.0/SequenceSuite.dmg"
+                sparkle:version="12"
+                sparkle:shortVersionString="1.7.0"
+                sparkle:edSignature="OwiaRE9yGGJvYAQhHlKqfIMo/F/CVHOZOefoAV4lrlNnhwKOu4ikd2l4Iv+Dx2MQ0CgnYuZTDUlnTOy4hSl7CA=="
+                length="8961640"
+                type="application/octet-stream"
+            />
+        </item>
+
+        <item>
             <title>Version 1.6.0</title>
             <sparkle:releaseNotesLink>https://editkit-tools.github.io/sequencesuite/release-notes/1.6.0.html</sparkle:releaseNotesLink>
             <pubDate>Fri, 17 Jul 2026 12:28:11 +0100</pubDate>
